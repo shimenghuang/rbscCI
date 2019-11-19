@@ -1,0 +1,2 @@
+PKG_CPPFLAGS = -I/opt/bee/home_NEW/huangs69/boost_1_69_0
+PKG_CXXFLAGS = -std=c++0x
