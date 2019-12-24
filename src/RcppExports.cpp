@@ -18,9 +18,23 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// cpCI
+NumericVector cpCI(int n_tot, int n_suc, double conf);
+RcppExport SEXP _fastCI_cpCI(SEXP n_totSEXP, SEXP n_sucSEXP, SEXP confSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< int >::type n_tot(n_totSEXP);
+    Rcpp::traits::input_parameter< int >::type n_suc(n_sucSEXP);
+    Rcpp::traits::input_parameter< double >::type conf(confSEXP);
+    rcpp_result_gen = Rcpp::wrap(cpCI(n_tot, n_suc, conf));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_fastCI_bscCI", (DL_FUNC) &_fastCI_bscCI, 3},
+    {"_fastCI_cpCI", (DL_FUNC) &_fastCI_cpCI, 3},
     {NULL, NULL, 0}
 };
 

@@ -5,3 +5,7 @@
     .Call(`_fastCI_bscCI`, n_tot, n_suc, conf)
 }
 
+.cpCI <- function(n_tot, n_suc, conf) {
+    .Call(`_fastCI_cpCI`, n_tot, n_suc, conf)
+}
+
