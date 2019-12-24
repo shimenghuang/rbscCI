@@ -5,7 +5,7 @@
 #'@param conf ...
 #'@details ...
 #'
-#'@export bscCI
+#'@export cpCI
 cpCI <- function(n_tot, n_suc, conf) {
   .cpCI(n_tot, n_suc, conf)
 }
