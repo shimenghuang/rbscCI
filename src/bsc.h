@@ -2,6 +2,7 @@
 #define BSC_H
 
 #include <vector>
+#include <cmath>
 
 #include "util.h"
 

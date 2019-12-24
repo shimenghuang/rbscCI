@@ -2,4 +2,4 @@
 
 export(bscCI)
 importFrom(Rcpp,evalCpp)
-useDynLib(bscCI, .registration = TRUE)
+useDynLib(fastCI, .registration = TRUE)

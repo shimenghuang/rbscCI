@@ -1,13 +1,13 @@
-Package: bscCI
+Package: fastCI
 Type: Package
-Title: What the Package Does in One 'Title Case' Line
-Version: 1.0
+Title: R package 
+Version: 0.0.0.9000
 Date: 2019-01-17
-Author: Your Name
-Maintainer: Your Name <your@email.com>
+Authors@R: c(person("Shimeng", "Huang", role = c("aut", "cre"), email = "shimeng.huang@roche.com"),
+             person("Keith", "Winstein", role = "aut")
 Description: One paragraph description of what the package does as one or more full
          sentences.
-License: GPL (>= 2)
-Imports: Rcpp (>= 0.12.19)
+License: GPL (>= 3)
+Imports: Rcpp (>= 0.12.18)
 LinkingTo: Rcpp
-RoxygenNote: 6.1.1
+RoxygenNote: 6.0.1

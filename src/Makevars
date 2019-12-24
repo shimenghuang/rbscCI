@@ -1,2 +1,2 @@
-PKG_CPPFLAGS = -I$(HOME)/boost_1_69_0
+PKG_CPPFLAGS = -I$(HOME)/boost_1_72_0
 PKG_CXXFLAGS = -std=c++0x

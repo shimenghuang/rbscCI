@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // bscCI
 NumericVector bscCI(int n_tot, int n_suc, double conf);
-RcppExport SEXP _bscCI_bscCI(SEXP n_totSEXP, SEXP n_sucSEXP, SEXP confSEXP) {
+RcppExport SEXP _fastCI_bscCI(SEXP n_totSEXP, SEXP n_sucSEXP, SEXP confSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -20,11 +20,11 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_bscCI_bscCI", (DL_FUNC) &_bscCI_bscCI, 3},
+    {"_fastCI_bscCI", (DL_FUNC) &_fastCI_bscCI, 3},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_bscCI(DllInfo *dll) {
+RcppExport void R_init_fastCI(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }

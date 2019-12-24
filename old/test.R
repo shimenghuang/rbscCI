@@ -29,7 +29,7 @@ while (counter < length(sas_lst)) {
 }
 
 # R results
-library(bscCI)
+library(fastCI)
 system.time(
   for (ii in 1:n_test) {
     v1[ii,] <- bscCI(dat$n[ii], dat$x[ii], 0.95)
