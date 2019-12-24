@@ -1,13 +1,13 @@
 Package: fastCI
 Type: Package
-Title: R package 
+Title: Fast Computation of Confidence Intervals 
 Version: 0.0.0.9000
 Date: 2019-01-17
 Authors@R: c(person("Shimeng", "Huang", role = c("aut", "cre"), email = "shimeng.huang@roche.com"),
-             person("Keith", "Winstein", role = "aut")
+             person("Keith", "Winstein", role = "aut"))
 Description: One paragraph description of what the package does as one or more full
          sentences.
 License: GPL (>= 3)
 Imports: Rcpp (>= 0.12.18)
-LinkingTo: Rcpp
+LinkingTo: Rcpp, BH
 RoxygenNote: 6.0.1

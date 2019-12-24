@@ -1,3 +1,5 @@
+// [[Rcpp::depends(BH)]]
+
 #include <boost/math/special_functions/beta.hpp>
 
 #include "cp.h"
