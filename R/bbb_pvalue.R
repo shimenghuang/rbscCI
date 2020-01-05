@@ -9,3 +9,15 @@
 bbb_pvalue <- function(n1_tot, n2_tot, gamma, n1_suc, n2_suc, p_step) {
   .bbb_pvalue(n1_tot, n2_tot, gamma, n1_suc, n2_suc, p_step)
 }
+
+#'Description here..
+#'
+#'@param n_tot ...
+#'@param n_suc ...
+#'@param gamma ...
+#'@details ...
+#'
+#'@export bbb_fast_pvalue
+bbb_fast_pvalue <- function(n1_tot, n2_tot, gamma, n1_suc, n2_suc, p_slot, alpha) {
+  .bbb_fast_pvalue(n1_tot, n2_tot, gamma, n1_suc, n2_suc, p_slot, alpha)
+}

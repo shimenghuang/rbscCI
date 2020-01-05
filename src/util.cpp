@@ -46,13 +46,18 @@ breal bicoln( const unsigned int N, const unsigned int k )
 
   if ( N >= cache.size() ) {
     unsigned int old_size = cache.size();
+    
+    std::cout << "old_size: " << cache.size() << std::endl;
 
     cache.resize( N + 1 );
 
     for ( unsigned int candidate_N = old_size; candidate_N < cache.size(); candidate_N++ ) {
+      
+      // std::cout << "candidate_N: " << candidate_N << std::endl;
+      
       cache.at( candidate_N ).resize( candidate_N + 1 );
       for ( unsigned int candidate_k = 0; candidate_k <= candidate_N; candidate_k++ ) {
-	cache.at( candidate_N ).at( candidate_k ) = bicoln_raw( candidate_N, candidate_k );
+        cache.at( candidate_N ).at( candidate_k ) = bicoln_raw( candidate_N, candidate_k );
       }
     }
   }

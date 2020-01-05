@@ -5,11 +5,23 @@
     .Call(`_fastCI_bbb_pvalue`, n1_tot, n2_tot, gamma, n1_suc, n2_suc, p_step)
 }
 
+.bbb_fast_pvalue <- function(n1_tot, n2_tot, gamma, n1_suc, n2_suc, p_slot, alpha) {
+    .Call(`_fastCI_bbb_fast_pvalue`, n1_tot, n2_tot, gamma, n1_suc, n2_suc, p_slot, alpha)
+}
+
 .bscCI <- function(n_tot, n_suc, conf) {
     .Call(`_fastCI_bscCI`, n_tot, n_suc, conf)
 }
 
 .cpCI <- function(n_tot, n_suc, conf) {
     .Call(`_fastCI_cpCI`, n_tot, n_suc, conf)
+}
+
+.bicoln_raw <- function(N, k) {
+    .Call(`_fastCI_bicoln_raw_export`, N, k)
+}
+
+.bicoln_mem <- function(N, k) {
+    .Call(`_fastCI_bicoln_mem`, N, k)
 }
 

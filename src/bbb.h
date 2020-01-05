@@ -7,11 +7,11 @@
 
 class Barnard
 {
-  protected:
-    const unsigned int M_, N_;
+protected:
+  const unsigned int M_, N_;
   
-  private:
-    const breal gamma_;
+private:
+  const breal gamma_;
   
   virtual breal particular_p_value( const unsigned int count, const breal pi ) const;
   
@@ -20,30 +20,30 @@ class Barnard
   class PossibleOutcome {
     private:
       breal bicoln_cache;
-    
+      
     public:
       unsigned int i, j;
       unsigned int M, N;
-      breal d;
-    
-    PossibleOutcome( const unsigned int s_i,
-                     const unsigned int s_j,
-                     const unsigned int s_M,
-                     const unsigned int s_N );
-    
-    /* probability of this outcome if pi1 = pi2 = p */
+      breal d; // z_pooled statistic
+      
+      PossibleOutcome( const unsigned int s_i,
+                       const unsigned int s_j,
+                       const unsigned int s_M,
+                       const unsigned int s_N );
+      
+      /* probability of this outcome if pi1 = pi2 = p */
       breal likeln( const breal p ) const;
-    
-    bool operator<( const PossibleOutcome & other ) const { return d > other.d; }
+      
+      bool operator<( const PossibleOutcome & other ) const { return d > other.d; }
   };
   
-  protected:
-    std::vector< PossibleOutcome > outcomes;
+protected:
+  std::vector< PossibleOutcome > outcomes;
   
-  public:
-    Barnard( const unsigned int s_M,
-             const unsigned int s_N,
-             const breal s_gamma );
+public:
+  Barnard( const unsigned int s_M,
+           const unsigned int s_N,
+           const breal s_gamma );
   
   virtual breal p_value( const unsigned int i, const unsigned int j, const breal p_step ) const;
   
@@ -52,16 +52,17 @@ class Barnard
 
 class BarnardFast : public Barnard
 {
-  private:
-    const unsigned int p_slots_;
+private:
+  const unsigned int p_slots_;
   std::vector< std::vector< bool > > ppv_cache_;
+  // std::vector< std::vector< breal > > ppv_cache_;
   
-  public:
-    BarnardFast( const unsigned int s_M,
-                 const unsigned int s_N,
-                 const breal s_gamma,
-                 const breal s_slots,
-                 const breal alpha );
+public:
+  BarnardFast( const unsigned int s_M,
+               const unsigned int s_N,
+               const breal s_gamma,
+               const breal s_slots,
+               const breal alpha );
   
   breal particular_p_value( const unsigned int count, const breal pi ) const
   {

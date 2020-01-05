@@ -56,3 +56,25 @@ max(out_compare$sas.2-out_compare$v1.2) # 4.641143e-05
 # BlythStillCasellaCI
 # max(out_compare$sas.1-out_compare$v2.1) # 0.0081
 # max(out_compare$sas.2-out_compare$v2.2) # 0.0106
+
+# --- test some util ----
+system.time({
+  for (ii in 1:1000) {
+    bicoln_raw(2000,ii)
+  }
+})
+
+system.time({
+  for (ii in 1:1000) {
+    bicoln_mem(2000,ii)
+  }
+})
+
+system.time({
+  bbb_pvalue(100,120,1e-6,50,50,0.01)
+})
+
+system.time({
+  bbb_fast_pvalue(100,120,1e-6,50,50,0.01,0.95)
+})
+

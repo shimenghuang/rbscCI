@@ -35,7 +35,7 @@ Barnard::PossibleOutcome::PossibleOutcome( const unsigned int s_i,
   breal numer = pi2hat - pi1hat;
   breal denom = sqrt( denom1 * denom2 * denom3 );
   
-  d = abs( numer / denom );
+  d = abs( numer / denom ); // z_pooled statistic
 }
 
 breal Barnard::PossibleOutcome::likeln( const breal p ) const
@@ -76,6 +76,8 @@ breal Barnard::p_value( const unsigned int i, const unsigned int j, const breal 
                           PossibleOutcome( i, j, M_, N_ ) );
   unsigned int count = set - outcomes.begin();
   
+  std::cout << "count: " << count << std::endl;
+  
   /* find search limits using Berger-Boos procedure */
   const Interval & limits1 = M_search.limits[ i ];
   const Interval & limits2 = N_search.limits[ j ];
@@ -84,7 +86,14 @@ breal Barnard::p_value( const unsigned int i, const unsigned int j, const breal 
                    min( 1.0, min( limits1.upper, limits2.upper ) + p_step ) );
   
   breal ret = 0;
+  
+  std::cout << "search.lower: " << search.lower << std::endl;
+  std::cout << "search.upper: " << search.upper << std::endl;
+  
   for ( breal p = search.lower; p <= search.upper; p += p_step ) {
+    
+    // std::cout << "particular_p_value( count, p ): " << particular_p_value( count, p ) << std::endl;
+    
     ret = max( ret, particular_p_value( count, p ) );
   }
   
@@ -96,6 +105,7 @@ breal Barnard::particular_p_value( const unsigned int count, const breal pi ) co
   breal ret = 0;
   
   for ( unsigned int x = 0; x < count; x++ ) {
+    
     ret += exp( outcomes[ x ].likeln( pi ) );
   }
   
@@ -110,7 +120,12 @@ BarnardFast::BarnardFast( const unsigned int s_M,
   : Barnard( s_M, s_N, s_gamma ),
     p_slots_( s_slots ),
     ppv_cache_( (M_ + 1) * (N_ + 1) + 1, vector< bool >( p_slots_ + 1, -1 ) )
+    // ppv_cache_( (M_ + 1) * (N_ + 1) + 1, vector< breal >( p_slots_ + 1, -1 ) )
 {
+  
+  std::cout << "ppv_cache_.at(0).at(0): " << ppv_cache_.at(0).at(0) << std::endl;
+  std::cout << "ppv_cache_.at(0).at(1): " << ppv_cache_.at(0).at(1) << std::endl;
+  
   /* make the cache in fast order */
   for ( unsigned int pslot = 0; pslot <= p_slots_; pslot++ ) {
     breal cumulative_probability = 0.0;
@@ -118,6 +133,7 @@ BarnardFast::BarnardFast( const unsigned int s_M,
     for ( unsigned int count = 1; count <= outcomes.size(); count++ ) {
       cumulative_probability += exp( outcomes.at( count - 1 ).likeln( breal( pslot ) / breal( p_slots_ ) ) );
       ppv_cache_.at( count ).at( pslot ) = cumulative_probability >= alpha;
+      // ppv_cache_.at( count ).at( pslot ) = cumulative_probability;
     }
   }
 }
