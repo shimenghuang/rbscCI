@@ -2,19 +2,19 @@
 % Please edit documentation in R/bscCI.R
 \name{bscCI}
 \alias{bscCI}
-\title{Description here..}
+\title{Blyth-Still-Casella confidence interval}
 \usage{
 bscCI(n_tot, n_suc, conf)
 }
 \arguments{
-\item{n_tot}{...}
+\item{n_tot}{Total number of experiments}
 
-\item{n_suc}{...}
+\item{n_suc}{Number of successes}
 
-\item{conf}{...}
+\item{conf}{Confidence level (1-alpha)}
 }
 \description{
-Description here..
+Blyth-Still-Casella confidence interval
 }
 \details{
 ...

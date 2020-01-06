@@ -78,3 +78,30 @@ system.time({
   bbb_fast_pvalue(100,120,1e-6,50,50,0.01,0.95)
 })
 
+# compare with stats package
+system.time({
+  for (ii in 1:1000) {
+    binom.test(ii,1000,p = 0.5)
+  }
+})
+
+system.time({
+  for (ii in 1:1000) {
+    cpCI(1000,ii, 0.95)
+  }
+})
+
+# compare with BlythStillCasellaCI
+library(BlythStillCasellaCI)
+system.time({
+  for (ii in 1:100) {
+    blyth.still.casella(100,ii,0.05)
+  }
+})
+
+library(fastCI)
+system.time({
+  for (ii in 1:100) {
+    bscCI(100,ii,0.95)
+  }
+})

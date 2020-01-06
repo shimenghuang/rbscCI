@@ -47,7 +47,7 @@ breal bicoln( const unsigned int N, const unsigned int k )
   if ( N >= cache.size() ) {
     unsigned int old_size = cache.size();
     
-    std::cout << "old_size: " << cache.size() << std::endl;
+    // std::cout << "old_size: " << cache.size() << std::endl;
 
     cache.resize( N + 1 );
 

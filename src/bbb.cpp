@@ -76,7 +76,7 @@ breal Barnard::p_value( const unsigned int i, const unsigned int j, const breal 
                           PossibleOutcome( i, j, M_, N_ ) );
   unsigned int count = set - outcomes.begin();
   
-  std::cout << "count: " << count << std::endl;
+  // std::cout << "count: " << count << std::endl;
   
   /* find search limits using Berger-Boos procedure */
   const Interval & limits1 = M_search.limits[ i ];
@@ -87,8 +87,8 @@ breal Barnard::p_value( const unsigned int i, const unsigned int j, const breal 
   
   breal ret = 0;
   
-  std::cout << "search.lower: " << search.lower << std::endl;
-  std::cout << "search.upper: " << search.upper << std::endl;
+  // std::cout << "search.lower: " << search.lower << std::endl;
+  // std::cout << "search.upper: " << search.upper << std::endl;
   
   for ( breal p = search.lower; p <= search.upper; p += p_step ) {
     

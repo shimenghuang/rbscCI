@@ -2,19 +2,19 @@
 % Please edit documentation in R/cpCI.R
 \name{cpCI}
 \alias{cpCI}
-\title{Description here..}
+\title{Clopper-Pearson confidence interval}
 \usage{
 cpCI(n_tot, n_suc, conf)
 }
 \arguments{
-\item{n_tot}{...}
+\item{n_tot}{Total number of experiments}
 
-\item{n_suc}{...}
+\item{n_suc}{Number of successes}
 
-\item{conf}{...}
+\item{conf}{Confidence level (1-alpha)}
 }
 \description{
-Description here..
+Clopper-Pearson confidence interval
 }
 \details{
 ...
