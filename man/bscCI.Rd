@@ -4,7 +4,7 @@
 \alias{bscCI}
 \title{Blyth-Still-Casella confidence interval}
 \usage{
-bscCI(n_tot, n_suc, conf)
+bscCI(n_tot, n_suc, conf, digits = 2)
 }
 \arguments{
 \item{n_tot}{Total number of experiments}
@@ -17,5 +17,7 @@ bscCI(n_tot, n_suc, conf)
 Blyth-Still-Casella confidence interval
 }
 \details{
+Comuputes the exact Blyth-Still-Casella binomial confidence interval. The initial CI is the Clopper-Pearson confidence interval.
+
 ...
 }
