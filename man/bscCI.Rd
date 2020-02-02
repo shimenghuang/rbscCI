@@ -12,12 +12,15 @@ bscCI(n_tot, n_suc, conf, digits = 2)
 \item{n_suc}{Number of successes}
 
 \item{conf}{Confidence level (1-alpha)}
+
+\item{digits}{Number of decimal places to be used}
+}
+\value{
+A vector containing the confidence interval. If \code{digits} is given, both upper and lower limits are rounded to the given number of digits.
 }
 \description{
 Blyth-Still-Casella confidence interval
 }
 \details{
 Comuputes the exact Blyth-Still-Casella binomial confidence interval. The initial CI is the Clopper-Pearson confidence interval.
-
-...
 }

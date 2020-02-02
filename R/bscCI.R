@@ -5,8 +5,12 @@
 #' @param n_tot Total number of experiments
 #' @param n_suc Number of successes
 #' @param conf Confidence level (1-alpha)
-#' @details ...
+#' @param digits Number of decimal places to be used
 #'
+#' @return A vector containing the confidence interval. If \code{digits} is given, both upper and lower limits are rounded to the given number of digits.
+#' 
+#' @example bsc_ci(100,25,0.95,digits = 3)
+#' 
 #' @export bscCI
 bscCI <- function(n_tot, n_suc, conf, digits = 2) {
   
