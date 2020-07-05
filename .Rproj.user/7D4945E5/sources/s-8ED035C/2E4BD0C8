@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593975204740.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3049198844",
+    "id" : "2E4BD0C8",
+    "lastKnownWriteTime" : 1593975634,
+    "last_content_update" : 1593975634987,
+    "path" : "~/rbscCI/tests/testthat/test-bscCI.R",
+    "project_path" : "tests/testthat/test-bscCI.R",
+    "properties" : {
+        "cursorPosition" : "33,23",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

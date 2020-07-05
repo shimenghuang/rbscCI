@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593973703925.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "32B66CD9",
+    "lastKnownWriteTime" : 1593973950,
+    "last_content_update" : 1593973950127,
+    "path" : "~/rbscCI/src/util.cpp",
+    "project_path" : "src/util.cpp",
+    "properties" : {
+        "cursorPosition" : "66,0",
+        "scrollLine" : "31"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "cpp"
+}

@@ -4,7 +4,6 @@ using namespace Rcpp;
 #include "bsc.h"
 #include "cp.h"
 
-
 // [[Rcpp::export(".bscCI")]]
 NumericVector bscCI(int n_tot, int n_suc, double conf) {
 

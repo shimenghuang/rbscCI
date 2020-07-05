@@ -22,5 +22,9 @@ A vector containing the confidence interval. If \code{digits} is given, both upp
 Blyth-Still-Casella confidence interval
 }
 \details{
-Comuputes the exact Blyth-Still-Casella binomial confidence interval. The initial CI is the Clopper-Pearson confidence interval.
+Computes the exact Blyth-Still-Casella binomial confidence interval. The initial CI is the Clopper-Pearson confidence interval.
+}
+\examples{
+bscCI(100,25,0.95,digits = 3)
+
 }

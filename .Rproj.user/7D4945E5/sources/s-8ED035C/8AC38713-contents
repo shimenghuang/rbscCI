@@ -1,0 +1,15 @@
+Package: rbscCI
+Type: Package
+Title: Blyth-Still-Casella Confidence Interval
+Version: 0.9.0
+Date: 2020-07-05
+Authors@R: c(person("Shimeng", "Huang", role = c("aut", "cre"), email = "shimeng.huang@roche.com"),
+             person("Keith", "Winstein", role = "aut"))
+Description: Provides a fast calculation of the Blyth-Still-Casella confidence interval.
+License: GPL (>= 3)
+Imports: 
+    Rcpp
+LinkingTo: Rcpp, BH
+RoxygenNote: 6.0.1
+Suggests: 
+    testthat

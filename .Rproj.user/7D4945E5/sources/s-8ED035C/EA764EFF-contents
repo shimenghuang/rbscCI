@@ -1,0 +1,32 @@
+
+long int myatoi( const string & str )
+{
+  char *end;
+  
+  errno = 0;
+  long int ret = strtol( str.c_str(), &end, 10 );
+  
+  if ( ( errno != 0 )
+         || ( end != str.c_str() + strlen( str.c_str() ) ) ) {
+    cerr << "Bad integer: " << str << endl;
+    throw;
+  }
+  
+  return ret;
+}
+
+double myatof( const string & str )
+{
+  char *end;
+  
+  errno = 0;
+  double ret = strtod( str.c_str(), &end );
+  
+  if ( ( errno != 0 )
+         || ( end != str.c_str() + strlen( str.c_str() ) ) ) {
+    cerr << "Bad floating-point number: " << str << endl;
+    throw;
+  }
+  
+  return ret;
+}

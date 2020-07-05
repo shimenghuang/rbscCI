@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593977178054.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C2B89633",
+    "lastKnownWriteTime" : 1593977401,
+    "last_content_update" : 1593977401112,
+    "path" : "~/rbscCI/R/cpCI.R",
+    "project_path" : "R/cpCI.R",
+    "properties" : {
+        "cursorPosition" : "7,20",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

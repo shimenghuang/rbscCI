@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593973545539.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "CB72931C",
+    "lastKnownWriteTime" : 1593973656,
+    "last_content_update" : 1593973656538,
+    "path" : "~/rbscCI/src/binary-search.cpp",
+    "project_path" : "src/binary-search.cpp",
+    "properties" : {
+        "cursorPosition" : "33,9",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "cpp"
+}

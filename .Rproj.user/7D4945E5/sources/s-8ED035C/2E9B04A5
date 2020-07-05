@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593976795590.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2357043119",
+    "id" : "2E9B04A5",
+    "lastKnownWriteTime" : 1593977016,
+    "last_content_update" : 1593977016101,
+    "path" : "~/rbscCI/README.Rmd",
+    "project_path" : "README.Rmd",
+    "properties" : {
+        "cursorPosition" : "33,78",
+        "scrollLine" : "17"
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

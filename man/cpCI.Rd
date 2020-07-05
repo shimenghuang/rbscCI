@@ -4,7 +4,7 @@
 \alias{cpCI}
 \title{Clopper-Pearson confidence interval}
 \usage{
-cpCI(n_tot, n_suc, conf)
+cpCI(n_tot, n_suc, conf, digits = 2)
 }
 \arguments{
 \item{n_tot}{Total number of experiments}
@@ -12,10 +12,16 @@ cpCI(n_tot, n_suc, conf)
 \item{n_suc}{Number of successes}
 
 \item{conf}{Confidence level (1-alpha)}
+
+\item{digits}{Number of decimal places to be used}
 }
 \description{
 Clopper-Pearson confidence interval
 }
 \details{
-...
+Computes the Clopper-Pearson confidence interval.
+}
+\examples{
+cpCI(100,25,0.95)
+
 }

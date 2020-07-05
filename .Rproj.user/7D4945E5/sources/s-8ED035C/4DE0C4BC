@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593974701076.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2948786624",
+    "id" : "4DE0C4BC",
+    "lastKnownWriteTime" : 1593974740,
+    "last_content_update" : 1593974740118,
+    "path" : "~/rbscCI/R/rbscCI-package.R",
+    "project_path" : "R/rbscCI-package.R",
+    "properties" : {
+        "cursorPosition" : "2,87",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

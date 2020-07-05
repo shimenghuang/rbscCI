@@ -5,42 +5,9 @@
 
 using namespace Rcpp;
 
-// bbb_pvalue
-double bbb_pvalue(unsigned int n1_tot, unsigned int n2_tot, double gamma, unsigned int n1_suc, unsigned int n2_suc, double p_step);
-RcppExport SEXP _fastCI_bbb_pvalue(SEXP n1_totSEXP, SEXP n2_totSEXP, SEXP gammaSEXP, SEXP n1_sucSEXP, SEXP n2_sucSEXP, SEXP p_stepSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< unsigned int >::type n1_tot(n1_totSEXP);
-    Rcpp::traits::input_parameter< unsigned int >::type n2_tot(n2_totSEXP);
-    Rcpp::traits::input_parameter< double >::type gamma(gammaSEXP);
-    Rcpp::traits::input_parameter< unsigned int >::type n1_suc(n1_sucSEXP);
-    Rcpp::traits::input_parameter< unsigned int >::type n2_suc(n2_sucSEXP);
-    Rcpp::traits::input_parameter< double >::type p_step(p_stepSEXP);
-    rcpp_result_gen = Rcpp::wrap(bbb_pvalue(n1_tot, n2_tot, gamma, n1_suc, n2_suc, p_step));
-    return rcpp_result_gen;
-END_RCPP
-}
-// bbb_fast_pvalue
-double bbb_fast_pvalue(unsigned int n1_tot, unsigned int n2_tot, double gamma, unsigned int n1_suc, unsigned int n2_suc, int p_slot, double alpha);
-RcppExport SEXP _fastCI_bbb_fast_pvalue(SEXP n1_totSEXP, SEXP n2_totSEXP, SEXP gammaSEXP, SEXP n1_sucSEXP, SEXP n2_sucSEXP, SEXP p_slotSEXP, SEXP alphaSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< unsigned int >::type n1_tot(n1_totSEXP);
-    Rcpp::traits::input_parameter< unsigned int >::type n2_tot(n2_totSEXP);
-    Rcpp::traits::input_parameter< double >::type gamma(gammaSEXP);
-    Rcpp::traits::input_parameter< unsigned int >::type n1_suc(n1_sucSEXP);
-    Rcpp::traits::input_parameter< unsigned int >::type n2_suc(n2_sucSEXP);
-    Rcpp::traits::input_parameter< int >::type p_slot(p_slotSEXP);
-    Rcpp::traits::input_parameter< double >::type alpha(alphaSEXP);
-    rcpp_result_gen = Rcpp::wrap(bbb_fast_pvalue(n1_tot, n2_tot, gamma, n1_suc, n2_suc, p_slot, alpha));
-    return rcpp_result_gen;
-END_RCPP
-}
 // bscCI
 NumericVector bscCI(int n_tot, int n_suc, double conf);
-RcppExport SEXP _fastCI_bscCI(SEXP n_totSEXP, SEXP n_sucSEXP, SEXP confSEXP) {
+RcppExport SEXP _rbscCI_bscCI(SEXP n_totSEXP, SEXP n_sucSEXP, SEXP confSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -53,7 +20,7 @@ END_RCPP
 }
 // cpCI
 NumericVector cpCI(int n_tot, int n_suc, double conf);
-RcppExport SEXP _fastCI_cpCI(SEXP n_totSEXP, SEXP n_sucSEXP, SEXP confSEXP) {
+RcppExport SEXP _rbscCI_cpCI(SEXP n_totSEXP, SEXP n_sucSEXP, SEXP confSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -66,7 +33,7 @@ END_RCPP
 }
 // bicoln_raw_export
 double bicoln_raw_export(const unsigned int N, const unsigned int k);
-RcppExport SEXP _fastCI_bicoln_raw_export(SEXP NSEXP, SEXP kSEXP) {
+RcppExport SEXP _rbscCI_bicoln_raw_export(SEXP NSEXP, SEXP kSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -78,7 +45,7 @@ END_RCPP
 }
 // bicoln_mem
 double bicoln_mem(const unsigned int N, const unsigned int k);
-RcppExport SEXP _fastCI_bicoln_mem(SEXP NSEXP, SEXP kSEXP) {
+RcppExport SEXP _rbscCI_bicoln_mem(SEXP NSEXP, SEXP kSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -90,16 +57,14 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_fastCI_bbb_pvalue", (DL_FUNC) &_fastCI_bbb_pvalue, 6},
-    {"_fastCI_bbb_fast_pvalue", (DL_FUNC) &_fastCI_bbb_fast_pvalue, 7},
-    {"_fastCI_bscCI", (DL_FUNC) &_fastCI_bscCI, 3},
-    {"_fastCI_cpCI", (DL_FUNC) &_fastCI_cpCI, 3},
-    {"_fastCI_bicoln_raw_export", (DL_FUNC) &_fastCI_bicoln_raw_export, 2},
-    {"_fastCI_bicoln_mem", (DL_FUNC) &_fastCI_bicoln_mem, 2},
+    {"_rbscCI_bscCI", (DL_FUNC) &_rbscCI_bscCI, 3},
+    {"_rbscCI_cpCI", (DL_FUNC) &_rbscCI_cpCI, 3},
+    {"_rbscCI_bicoln_raw_export", (DL_FUNC) &_rbscCI_bicoln_raw_export, 2},
+    {"_rbscCI_bicoln_mem", (DL_FUNC) &_rbscCI_bicoln_mem, 2},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_fastCI(DllInfo *dll) {
+RcppExport void R_init_rbscCI(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }

@@ -1,0 +1,284 @@
+[
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "/Users/shimenghuang/rbscCI/src/binary-search.cpp",
+                "kind" : 6,
+                "line" : 8,
+                "name" : "param_binary_search(Interval, function<breal (const breal)>, const breal, const bool)",
+                "parent_name" : "",
+                "usr" : "c:@F@param_binary_search#$@C@Interval#$@N@std@N@__1@C@function>#d#p1d#1d#1b#"
+            }
+        ],
+        "file" : "/Users/shimenghuang/rbscCI/src/binary-search.cpp",
+        "file_last_write" : 1593973656
+    },
+    {
+        "definitions" : [
+        ],
+        "file" : "/Users/shimenghuang/rbscCI/src/binary-search.h",
+        "file_last_write" : 1577148604
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 25,
+                "file" : "/Users/shimenghuang/rbscCI/src/bsc.cpp",
+                "kind" : 7,
+                "line" : 7,
+                "name" : "verify_univariance",
+                "parent_name" : "BlythStillCasella",
+                "usr" : "c:@C@BlythStillCasella@F@verify_univariance#1"
+            },
+            {
+                "column" : 25,
+                "file" : "/Users/shimenghuang/rbscCI/src/bsc.cpp",
+                "kind" : 7,
+                "line" : 14,
+                "name" : "refine_intervals",
+                "parent_name" : "BlythStillCasella",
+                "usr" : "c:@C@BlythStillCasella@F@refine_intervals#"
+            },
+            {
+                "column" : 26,
+                "file" : "/Users/shimenghuang/rbscCI/src/bsc.cpp",
+                "kind" : 7,
+                "line" : 82,
+                "name" : "coverage_probability(const breal)",
+                "parent_name" : "BlythStillCasella",
+                "usr" : "c:@C@BlythStillCasella@F@coverage_probability#1d#1"
+            },
+            {
+                "column" : 45,
+                "file" : "/Users/shimenghuang/rbscCI/src/bsc.cpp",
+                "kind" : 7,
+                "line" : 93,
+                "name" : "limits",
+                "parent_name" : "BlythStillCasella",
+                "usr" : "c:@C@BlythStillCasella@F@limits#1"
+            }
+        ],
+        "file" : "/Users/shimenghuang/rbscCI/src/bsc.cpp",
+        "file_last_write" : 1577148604
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "/Users/shimenghuang/rbscCI/src/bsc.h",
+                "kind" : 2,
+                "line" : 9,
+                "name" : "BlythStillCasella",
+                "parent_name" : "",
+                "usr" : "c:@C@BlythStillCasella"
+            },
+            {
+                "column" : 12,
+                "file" : "/Users/shimenghuang/rbscCI/src/bsc.h",
+                "kind" : 7,
+                "line" : 25,
+                "name" : "limits(const unsigned int)",
+                "parent_name" : "BlythStillCasella",
+                "usr" : "c:@C@BlythStillCasella@F@limits#1i#1"
+            }
+        ],
+        "file" : "/Users/shimenghuang/rbscCI/src/bsc.h",
+        "file_last_write" : 1577149526
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 15,
+                "file" : "/Users/shimenghuang/rbscCI/src/bscExports.cpp",
+                "kind" : 6,
+                "line" : 8,
+                "name" : "bscCI(int, int, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@bscCI#I#I#d#"
+            }
+        ],
+        "file" : "/Users/shimenghuang/rbscCI/src/bscExports.cpp",
+        "file_last_write" : 1593971226
+    },
+    {
+        "definitions" : [
+        ],
+        "file" : "/Users/shimenghuang/rbscCI/src/cp.cpp",
+        "file_last_write" : 1577208646
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "/Users/shimenghuang/rbscCI/src/cp.h",
+                "kind" : 2,
+                "line" : 6,
+                "name" : "ClopperPearson",
+                "parent_name" : "",
+                "usr" : "c:@C@ClopperPearson"
+            },
+            {
+                "column" : 30,
+                "file" : "/Users/shimenghuang/rbscCI/src/cp.h",
+                "kind" : 7,
+                "line" : 16,
+                "name" : "limits",
+                "parent_name" : "ClopperPearson",
+                "usr" : "c:@C@ClopperPearson@F@limits#1"
+            }
+        ],
+        "file" : "/Users/shimenghuang/rbscCI/src/cp.h",
+        "file_last_write" : 1577148604
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 15,
+                "file" : "/Users/shimenghuang/rbscCI/src/cpExports.cpp",
+                "kind" : 6,
+                "line" : 7,
+                "name" : "cpCI(int, int, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@cpCI#I#I#d#"
+            }
+        ],
+        "file" : "/Users/shimenghuang/rbscCI/src/cpExports.cpp",
+        "file_last_write" : 1577216629
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 17,
+                "file" : "/Users/shimenghuang/rbscCI/src/util.cpp",
+                "kind" : 7,
+                "line" : 15,
+                "name" : "middle",
+                "parent_name" : "Interval",
+                "usr" : "c:@C@Interval@F@middle#1"
+            },
+            {
+                "column" : 17,
+                "file" : "/Users/shimenghuang/rbscCI/src/util.cpp",
+                "kind" : 7,
+                "line" : 20,
+                "name" : "width",
+                "parent_name" : "Interval",
+                "usr" : "c:@C@Interval@F@width#1"
+            },
+            {
+                "column" : 7,
+                "file" : "/Users/shimenghuang/rbscCI/src/util.cpp",
+                "kind" : 6,
+                "line" : 26,
+                "name" : "factln(const unsigned int)",
+                "parent_name" : "",
+                "usr" : "c:@F@factln#1i#"
+            },
+            {
+                "column" : 7,
+                "file" : "/Users/shimenghuang/rbscCI/src/util.cpp",
+                "kind" : 6,
+                "line" : 32,
+                "name" : "bicoln_raw(const unsigned int, const unsigned int)",
+                "parent_name" : "",
+                "usr" : "c:@F@bicoln_raw#1i#1i#"
+            },
+            {
+                "column" : 7,
+                "file" : "/Users/shimenghuang/rbscCI/src/util.cpp",
+                "kind" : 6,
+                "line" : 38,
+                "name" : "likeln(const unsigned int, const unsigned int, const breal)",
+                "parent_name" : "",
+                "usr" : "c:@F@likeln#1i#1i#1d#"
+            },
+            {
+                "column" : 7,
+                "file" : "/Users/shimenghuang/rbscCI/src/util.cpp",
+                "kind" : 6,
+                "line" : 43,
+                "name" : "bicoln(const unsigned int, const unsigned int)",
+                "parent_name" : "",
+                "usr" : "c:@F@bicoln#1i#1i#"
+            }
+        ],
+        "file" : "/Users/shimenghuang/rbscCI/src/util.cpp",
+        "file_last_write" : 1593973950
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 16,
+                "file" : "/Users/shimenghuang/rbscCI/src/util.h",
+                "kind" : 8,
+                "line" : 7,
+                "name" : "breal",
+                "parent_name" : "",
+                "usr" : "c:util.h@T@breal"
+            },
+            {
+                "column" : 7,
+                "file" : "/Users/shimenghuang/rbscCI/src/util.h",
+                "kind" : 2,
+                "line" : 9,
+                "name" : "Interval",
+                "parent_name" : "",
+                "usr" : "c:@C@Interval"
+            },
+            {
+                "column" : 7,
+                "file" : "/Users/shimenghuang/rbscCI/src/util.h",
+                "kind" : 2,
+                "line" : 21,
+                "name" : "IntervalCollection",
+                "parent_name" : "",
+                "usr" : "c:@C@IntervalCollection"
+            },
+            {
+                "column" : 16,
+                "file" : "/Users/shimenghuang/rbscCI/src/util.h",
+                "kind" : 7,
+                "line" : 36,
+                "name" : "N",
+                "parent_name" : "IntervalCollection",
+                "usr" : "c:@C@IntervalCollection@F@N#1"
+            },
+            {
+                "column" : 9,
+                "file" : "/Users/shimenghuang/rbscCI/src/util.h",
+                "kind" : 7,
+                "line" : 37,
+                "name" : "alpha",
+                "parent_name" : "IntervalCollection",
+                "usr" : "c:@C@IntervalCollection@F@alpha#1"
+            }
+        ],
+        "file" : "/Users/shimenghuang/rbscCI/src/util.h",
+        "file_last_write" : 1577148604
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 8,
+                "file" : "/Users/shimenghuang/rbscCI/src/utilExports.cpp",
+                "kind" : 6,
+                "line" : 7,
+                "name" : "bicoln_raw_export(const unsigned int, const unsigned int)",
+                "parent_name" : "",
+                "usr" : "c:@F@bicoln_raw_export#1i#1i#"
+            },
+            {
+                "column" : 8,
+                "file" : "/Users/shimenghuang/rbscCI/src/utilExports.cpp",
+                "kind" : 6,
+                "line" : 14,
+                "name" : "bicoln_mem(const unsigned int, const unsigned int)",
+                "parent_name" : "",
+                "usr" : "c:@F@bicoln_mem#1i#1i#"
+            }
+        ],
+        "file" : "/Users/shimenghuang/rbscCI/src/utilExports.cpp",
+        "file_last_write" : 1577502950
+    }
+]
